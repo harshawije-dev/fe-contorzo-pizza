@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Counter from "./ItemCounter";
 
 const Product = () => {
   const [flavour, setFlavour] = useState("Flavour");
@@ -15,6 +16,9 @@ const Product = () => {
         <div className="card-body">
           <h4 className="card-title">Magerita</h4>
           <p className="card-text">540gr 3300kkal</p>
+
+          <Counter />
+
           <div className="flavour-wrapper">
             <button
               className="btn btn-outline-dark"
